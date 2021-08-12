@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 import Category from './Category';
 
 
-class ProductsByCat extends Component{
+class ProductsCat extends Component{
     constructor(props){
         super(props)
         this.state ={
@@ -76,4 +76,4 @@ class ProductsByCat extends Component{
     )
     }
 }
-export default ProductsByCat;
+export default ProductsCat;

@@ -1,11 +1,11 @@
 import React from 'react';
 import image from '../assets/images/logo.png';
 import ContentWrapper from './ContentWrapper';
-import LinkTotales from './LinkTotales';
-import LinkLP from './LinkLP';
-import LinkProdByCat from './LinkProdByCat';
-import LinkProdList from './LinkProdList';
-import LinkUserList from "./LinkUserList";
+import TotalesLink from './TotalesLink';
+import LastProductLink from './LastProductLink';
+import ProductsCatLink from './ProductsCatLink';
+import ProductsLink from './ProductsLink';
+import UserLink from "./UserLink";
 import NotFound from './NotFound';
 import { Link, Route, Switch } from "react-router-dom";
 
@@ -41,7 +41,7 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Totales -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link collapsed" to="/LinkTotales">
+                    <Link className="nav-link collapsed" to="/TotalesLink">
                         <i className="fas fa-chart-pie"></i>
                         <span>Totales</span>
                     </Link>
@@ -49,7 +49,7 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Last product -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link collapsed" to="/LinkLP">
+                    <Link className="nav-link collapsed" to="/LastProductLink">
                         <i className="fas fa-image"></i>
                         <span>Último producto</span>
                     </Link>
@@ -57,7 +57,7 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Productos por categoría -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link" to="/LinkProdByCat">
+                    <Link className="nav-link" to="/ProductsCatLink">
                         <i className="fas fa-tshirt"></i>
                         <span>Productos por categoría</span>
                     </Link>
@@ -65,7 +65,7 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Listado de productos -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link" to="/LinkProdList">
+                    <Link className="nav-link" to="/ProductsLink">
                         <i className="fas fa-fw fa-table"></i>
                         <span>Listado de productos</span>
                     </Link>
@@ -73,7 +73,7 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Listado de usuarios -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link" to="/LinkUserList">
+                    <Link className="nav-link" to="/UserLink">
                         <i className="fas fa-fw fa-table"></i>
                         <span>Listado de usuarios</span>
                     </Link>
@@ -88,20 +88,20 @@ function SideBar(){
                 <Route exact path="/">
                     <ContentWrapper />
                 </Route>
-                <Route path="/LinkLP">
-                    <LinkLP />
+                <Route path="/LastProductLink">
+                    <LastProductLink />
                 </Route>
-                <Route path="/LinkTotales">
-                    <LinkTotales />
+                <Route path="/TotalesLink">
+                    <TotalesLink />
                 </Route>
-                <Route path="/LinkProdByCat">
-                    <LinkProdByCat />
+                <Route path="/ProductsCatLink">
+                    <ProductsCatLink />
                 </Route>
-                <Route path="/LinkProdList">
-                    <LinkProdList />
+                <Route path="/ProductsLink">
+                    <ProductsLink />
                 </Route>
-                <Route path="/LinkUserList">
-                    <LinkUserList />
+                <Route path="/UserLink">
+                    <UserLink />
                 </Route>
                 <Route component={NotFound} />
             </Switch>

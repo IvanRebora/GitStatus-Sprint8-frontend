@@ -1,17 +1,17 @@
 import React from 'react';
 import TopBar from './TopBar';
 import Footer from './Footer';
-import ProductsByCat from './ProductsByCat'
+import User from './User'
 
 
-function ProductsByCategory(){
+function UserLink(){
     return(
         <React.Fragment>
             <div id="content-wrapper" class="d-flex flex-column">
                 <div id="content">
                     <TopBar />
                     <div className="cont-totales">
-                        <ProductsByCat />
+                        <User />
                     </div>
                     <Footer />
                 </div>
@@ -20,4 +20,4 @@ function ProductsByCategory(){
     )
 }
 
-export default ProductsByCategory;
+export default UserLink;

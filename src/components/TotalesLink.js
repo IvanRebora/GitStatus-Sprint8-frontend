@@ -5,7 +5,7 @@ import Footer from './Footer';
 import ContentRowProduct from './ContentRowProduct'
 
 
-function LinkTotales(){
+function TotalesLink(){
     return(
         <React.Fragment>
             <div id="content-wrapper" class="d-flex flex-column">
@@ -21,4 +21,4 @@ function LinkTotales(){
     )
 }
 
-export default LinkTotales;
+export default TotalesLink;

@@ -1,18 +1,16 @@
 import React from 'react';
 import TopBar from './TopBar';
 import Footer from './Footer';
-import User from './User'
+import LastProduct from './LastProduct'
 
 
-function LinkTableUserList(){
+function LastProductLink(){
     return(
         <React.Fragment>
             <div id="content-wrapper" class="d-flex flex-column">
                 <div id="content">
                     <TopBar />
-                    <div className="cont-totales">
-                        <User />
-                    </div>
+                    <LastProduct />
                     <Footer />
                 </div>
             </div>
@@ -20,4 +18,4 @@ function LinkTableUserList(){
     )
 }
 
-export default LinkTableUserList;
+export default LastProductLink;
