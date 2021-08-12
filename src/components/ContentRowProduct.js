@@ -23,7 +23,7 @@ class ContentRowProduct extends Component {
 
       category: {
         color: "warning",
-        titulo: "Categorias",
+        titulo: "Total de categorias",
         valor: 0,
         icono: "fas fa-cubes",
       },

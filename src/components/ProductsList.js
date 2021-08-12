@@ -10,7 +10,7 @@ function ProductsList(props){
                 <td>{props.category}</td>
                 <td>{props.brand}</td>
                 <td>{props.discount + "%"}</td>
-                <td><button><a href = {props.details}>Detalle</a></button></td>
+
             </tr>
         </React.Fragment>
     )
