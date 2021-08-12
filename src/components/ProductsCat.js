@@ -23,17 +23,17 @@ class ProductsCat extends Component{
 
                 this.setState({
                     metrics:[{ 
-                            title: "Categoría videojuegos",
+                            title: "Categoría Videojuegos",
                             color: "info",
                             value: result.meta.countByCategory.videojuegos
                         },
                         { 
-                            title: "Categoría cine",
+                            title: "Categoría Cine",
                             color: "info",
                             value: result.meta.countByCategory.cine
                         },
                         { 
-                            title: "Categoría comics",
+                            title: "Categoría Comics",
                             color: "info",
                             value: result.meta.countByCategory.comics
                         }]
