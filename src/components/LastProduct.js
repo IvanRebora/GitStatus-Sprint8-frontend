@@ -23,7 +23,8 @@ class LastProduct extends Component{
                 description: lastProduct.description,
                 price: lastProduct.price,
                 brand: lastProduct.brand,
-                images: lastProduct.images
+                discount: lastProduct.discount,
+                images: lastProduct.image
             }
           })
         })
@@ -75,7 +76,7 @@ class LastProduct extends Component{
                                             <strong>Marca: </strong>{this.state.lastProd.brand}
                                         </td>
                                     </tr>
-
+                                
                                     <tr style={{lineHeight:5 + 'px'}}>
                                         <td colSpan="2">&nbsp;</td>
                                     </tr>
@@ -85,6 +86,12 @@ class LastProduct extends Component{
                                             <strong>Precio: </strong>${this.state.lastProd.price}
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Descuento: </strong>{this.state.lastProd.discount}%
+                                        </td>
+                                    </tr>
+
                                     <tr>
                                         <td colSpan="2">&nbsp;</td>
                                     </tr>
